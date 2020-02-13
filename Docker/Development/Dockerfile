@@ -9,7 +9,7 @@ WORKDIR /src/app
 
 RUN ls -la /src/app
 
-CMD reflex -r '\.go$' -s -- sh -c "go run main.go"
+CMD reflex -r '\.go$' -s -- sh -c "go run src/main.go src/deck.go"
 # RUN reflex -r '\.go$' -s -- sh -c "go build -o main . && /app/main"
 # RUN reflex -r '\.go$' -s -- sh -c "go build -o main . && /app/main"
 # RUN go run main.go
