@@ -15,9 +15,7 @@ func main() {
 	// fmt.Println(card)
 	fmt.Println(cards)
 
-	for i, card := range cards {
-		fmt.Println(i, card)
-	}
+	cards.print()
 
 	// fmt.Println("Go Docker Tutorial!!!!")
 
